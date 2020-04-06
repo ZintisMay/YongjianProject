@@ -18,13 +18,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-var port = 3000
-app.listen(port, (err) => {
-  if (err) {
-    return console.log('something bad happened', err)
-  }
+// var port = 3000
+// app.listen(port, (err) => {
+//   if (err) {
+//     return console.log('something bad happened', err)
+//   }
 
-  console.log(`server is listening on ${port}`)
-})
+//   console.log(`server is listening on ${port}`)
+// })
 
-// module.exports = app;
+module.exports = app;
